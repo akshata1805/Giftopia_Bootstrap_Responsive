@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: rgba(255, 255, 255, 0.927);
+
+}
+
+#herobg {
+    background: linear-gradient(rgba(0, 0, 0, 0.63)), url(hero-bg.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    text-align: center;
+
+}
+
+#card {
+    background-color: #F1F8F6;
+    margin-top: 70px;
+}
+
+#card-overlay {
+    text-align: center;
+    padding-top: 300px;
+}
+
+#populer {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#review {
+    background: linear-gradient(rgba(0, 0, 0, 0.434)), url(testimonial-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#review1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.434)), url(cta-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+footer {
+    background-color: #f5fbf9;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    padding: 25px 0;
+}
+
+.footer-top {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 15px;
+}
+
+.footer-logo {
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.social-icons a {
+    color: #000;
+    margin: 0 8px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+.footer-bottom {
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    #herobg {
+        background-attachment: scroll !important;
+
+    }
+
+    .desktop-background-split {
+        background-attachment: scroll !important;
+    }
+
+    .background-left {
+        background-image: url(offer-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 50vh;
+    }
+
+    #left-bg-card,
+    #right-bg-card {
+        width: 100%;
+        margin-top: 300px;
+        padding: 50px 20px;
+        position: relative;
+
+    }
+
+    #left-bg-card {
+        padding-top: 100px;
+        background-color: #F1F8F6;
+    }
+
+    #right-bg-card {
+        background-color: #0b0b0b;
+
+    }
+
+    .background-right {
+        background-image: url(offer-bg2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 50vh;
+    }
+
+    #desktop-view-section {
+        display: none;
+    }
+
+    #review {
+        height: 800px;
+    }
+   
+
+    .icon-align {
+        text-align: center;
+    }
+
+    #review1 {
+        height: 800px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-links a {
+        margin: 8px 10px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    #herobg {
+        background-attachment: fixed !important;
+        text-align: left;
+
+    }
+
+    .herobg-data {
+        padding-top: 200px !important;
+        width: 70%;
+        font-size: 15px;
+    }
+
+    #populer {
+        font-size: 50px !important;
+
+    }
+
+
+    #dual-bg {
+        display: none;
+    }
+
+    .col-bg-left {
+        background-image: url(offer-bg.jpg);
+        background-position: top left;
+        background-size: cover auto;
+
+    }
+
+    .col-bg-right {
+        background-image: url(offer-bg2.jpg);
+        background-position: top right;
+        background-size: cover auto;
+
+
+    }
+
+    .col-bg-left,
+    .col-bg-right {
+        background-repeat: no-repeat;
+        height: 200vh;
+    }
+
+    .col-bg-left-data {
+        position: relative;
+        background-color: #F1F8F6;
+        margin-left: 370px;
+        padding: 30px;
+        width: 100%;
+        height: 700px;
+    }
+
+    #bg-left-data-div {
+        margin-top: 50px;
+        margin-left: 20px;
+        padding-left: 50px;
+    }
+
+    .col-bg-img {
+        position: absolute;
+        z-index: 2;
+        transform: translate(-80%, 15%);
+        float: left;
+    }
+
+    #col-bg-right-data {
+        position: relative;
+        background-color: #000000;
+        padding: 50px 30px;
+        width: 100%;
+        height: 800px;
+    }
+
+
+
+
+
+
+
+    #review1 #review1-data {
+        width: 70%;
+        margin-left: 100px;
+        text-align: center;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width:1024px) {
+    #herobg {
+        background-attachment: fixed !important;
+
+    }
+
+    #chocolate-data {
+        width: 20rem;
+    }
+
+    #dual-bg {
+        display: none;
+    }
+
+    .col-bg-left,
+    .col-bg-right {
+        background-attachment: fixed;
+
+    }
+
+    .col-bg-left-data {
+        position: relative;
+        background-color: #F1F8F6;
+        margin-left: 750px;
+        padding: 50px;
+        width: 100%;
+        height: 700px;
+    }
+
+    #bg-left-data-div {
+        text-align: center;
+        width: 70%;
+        padding-left: 70px;
+        margin: 80px 60px;
+    }
+
+    .col-bg-img {
+        position: absolute;
+        z-index: 2;
+        transform: translate(-80%, 15%);
+        float: left;
+    }
+
+    #col-bg-right-data {
+        position: relative;
+        background-color: #000000;
+        padding: 70px 50px;
+        width: 100%;
+        height: 760px;
+    }
+
+    #bg-right-data-div {
+        width: 90%;
+        line-height: 3px;
+        margin: 80px 60px;
+    }
+
+    #review {
+
+        height: 600px;
+        background-attachment: fixed !important;
+    }
+
+    #review-data {
+        margin-left: 400px;
+        width: 50%;
+    }
+
+    .icon-align {
+        margin: 50px 0px !important;
+
+    }
+
+    #review1 {
+        margin-top: 50px;
+
+        height: 600px;
+        background-attachment: fixed !important;
+    }
+
+    #review1 #review1-data {
+        width: 50%;
+        padding-top: 50px;
+        margin-left: 400px;
+        text-align: center;
+    }
+
+
+}

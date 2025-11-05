@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Use Poppins font for design accuracy */
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* Set the default text color for most elements */
+    color: #000000;
+}
+
+/* --- Hero Section --- */
+#herobg {
+    /* Correct linear-gradient syntax and order */
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(hero-bg.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    text-align: center;
+    color: #ffffff; /* Ensure hero text is white */
+    padding: 0 15px; /* Add padding for mobile view */
+}
+
+#herobg small,
+#herobg h1,
+#herobg p {
+    color: #ffffff;
+}
+
+.herobg-data {
+    padding-top: 60px;
+    margin: 0 auto; /* Center content on small screens */
+    width: 90%;
+}
+
+/* --- Card Section --- */
+#card {
+    background-color: #F1F8F6;
+    margin-top: 70px;
+}
+
+#card-overlay {
+    /* Align content to the bottom-left of the card image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Push content to the bottom */
+    align-items: flex-start; /* Align content to the left */
+    padding: 20px;
+}
+
+#card-overlay h5,
+#card-overlay a {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#card-overlay h5 {
+    font-size: 1.5rem;
+}
+
+/* --- Populer/Product Sections --- */
+#populer {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#product .card-title {
+    font-weight: 600;
+}
+
+#product .card-text {
+    font-size: 0.9rem;
+}
+
+/* --- Review Section --- */
+#review {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(testimonial-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 80px 15px;
+    background-attachment: scroll;
+}
+
+#review-data {
+    color: #ffffff;
+    padding: 0 15px;
+}
+
+#review h3 {
+    color: #ffffff;
+    line-height: 1.6;
+    font-size: 1.5rem;
+}
+
+/* --- Feature Icons Section --- */
+.icon-align {
+    text-align: center; /* Default center alignment for mobile */
+    padding: 20px 0;
+}
+
+.icon-align i {
+    color: #000000 !important;
+}
+
+/* --- Explore Section (`#review1`) --- */
+#review1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(cta-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 100px 15px;
+    background-attachment: scroll;
+}
+
+#review1-data {
+    color: #ffffff;
+    padding: 0 15px;
+    margin: 0 auto; /* Center content on all screens */
+}
+
+#review1-data p,
+#review1-data h3,
+#review1-data button {
+    color: #ffffff;
+}
+
+#review1-data h3 {
+    line-height: 1.3;
+    font-size: 2rem;
+}
+
+#review1-data button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* --- Footer Section --- */
+footer {
+    background-color: #f5fbf9;
+    color: #000;
+    padding: 25px 0;
+}
+
+.footer-top {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-logo {
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.social-icons a {
+    color: #000;
+    margin: 0 8px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom {
+    font-size: 0.95rem;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-bottom p {
+    color: #000000 !important;
+}
+
+
+/* ==================================== */
+/* MEDIA QUERIES               */
+/* ==================================== */
+
+
+@media only screen and (max-width: 767px) {
+    #herobg {
+        background-attachment: scroll !important;
+    }
+
+    /* Hide desktop version on mobile */
+    #desktop-view-section {
+        display: none;
+    }
+
+    /* Mobile Dual Background Section */
+    .background-left {
+        background-image: url(offer-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 50vh;
+        position: relative;
+    }
+
+    /* Card positioning for mobile: centered and slightly overlapping the background */
+    #left-bg-card,
+    #right-bg-card {
+        width: 90%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: -150px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 40px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    #left-bg-card {
+        background-color: #F1F8F6;
+    }
+    
+    #left-bg-card h4, #left-bg-card p, #left-bg-card button {
+        color: #000000;
+    }
+    
+    #dual-bg .background-left {
+        margin-bottom: 150px;
+    }
+
+    .background-right {
+        background-image: url(offer-bg2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 50vh;
+        position: relative;
+        margin-top: 200px;
+    }
+    
+    #right-bg-card {
+        background-color: #0b0b0b;
+        bottom: -200px;
+    }
+    
+    #right-bg-card p, #right-bg-card h4, #right-bg-card button {
+        color: #ffffff;
+    }
+    
+    #dual-bg .background-right {
+        margin-bottom: 200px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    #herobg {
+        background-attachment: fixed !important;
+        text-align: left;
+    }
+
+    .herobg-data {
+        padding-top: 200px !important;
+        width: 45%;
+        margin-left: 50px;
+        font-size: 15px;
+    }
+    
+    #populer {
+        font-size: 50px !important;
+    }
+
+    /* Hide mobile version on desktop/tablet */
+    #dual-bg {
+        display: none;
+    }
+    
+    .icon-align {
+        text-align: left !important; /* Fix alignment on desktop */
+    }
+    
+    /* --- Split Background Section (Tablet/Desktop) --- */
+    
+    .col-bg-left,
+    .col-bg-right {
+        background-repeat: no-repeat;
+        height: 550px; /* Define fixed height for columns */
+        background-size: cover;
+        position: relative; /* CRITICAL: For absolute card positioning */
+    }
+    
+    .col-bg-left {
+        background-image: url(offer-bg.jpg);
+        background-position: center left;
+    }
+
+    .col-bg-right {
+        background-image: url(offer-bg2.jpg);
+        background-position: center right;
+    }
+    
+    /* LEFT CARD (Deal of the Day) positioned relative to the left column */
+    .col-bg-left-data {
+        position: absolute;
+        top: 50%;
+        right: -30%; /* Overlap to the right */
+        transform: translateY(-50%);
+        background-color: #F1F8F6;
+        width: 70%;
+        height: auto;
+        padding: 50px;
+        z-index: 2;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    #bg-left-data-div h3, #bg-left-data-div p, #bg-left-data-div button {
+        color: #000000;
+    }
+    
+    .col-bg-img {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%); /* Centers the image over the top-left of the card */
+        width: 120px;
+    }
+
+    /* RIGHT CARD (About Us) positioned relative to the right column */
+    #col-bg-right-data {
+        position: absolute;
+        top: 50%;
+        left: -30%; /* Overlap to the left */
+        transform: translateY(-50%);
+        background-color: #000000;
+        width: 70%;
+        height: auto;
+        padding: 70px 50px;
+        z-index: 2;
+        text-align: left;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    #bg-right-data-div h3, #bg-right-data-div p, #bg-right-data-div button {
+        color: #ffffff;
+    }
+    
+    #desktop-view-section {
+        margin-bottom: 100px;
+    }
+    
+    /* Review Section */
+    #review-data {
+        margin: 0 auto;
+        width: 60%;
+        padding: 0 50px;
+    }
+    
+    #review h3 {
+        font-size: 1.8rem;
+    }
+    
+    /* Explore Section */
+    #review1-data {
+        margin: 0 auto;
+        width: 60%;
+        padding-top: 50px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    #herobg {
+        background-attachment: fixed !important;
+    }
+
+    #chocolate-data {
+        width: 20rem;
+    }
+
+    .col-bg-left,
+    .col-bg-right {
+        background-attachment: fixed;
+        height: 600px;
+    }
+
+    /* Further refine the position of the overlapping cards on large screens */
+    .col-bg-left-data {
+        right: -35%;
+        width: 65%;
+    }
+    
+    #col-bg-right-data {
+        left: -35%;
+        width: 65%;
+    }
+
+    #review {
+        height: 600px;
+        background-attachment: fixed !important;
+    }
+
+    #review-data {
+        width: 50%;
+    }
+
+    .icon-align {
+        margin: 50px 0px !important;
+    }
+
+    #review1 {
+        height: 600px;
+        background-attachment: fixed !important;
+    }
+
+    #review1-data {
+        width: 50%;
+        padding-top: 50px;
+    }
+}

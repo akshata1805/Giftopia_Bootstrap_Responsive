@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#container-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.525)), url(about-bg.jpg);
+    background-position: 70% 30%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+}
+
+#about-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.375)), url(about-01.jpg);
+    background-position: 80% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: #f5fbf9;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    padding: 25px 0;
+}
+
+.footer-top {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 15px;
+}
+
+.footer-logo {
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.social-icons a {
+    color: #000;
+    margin: 0 8px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+.footer-bottom {
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:320px) {
+
+    #container-bg,
+    #about-bg {
+        text-align: center;
+        padding-top: 80px;
+        padding-right: 24px;
+        padding-bottom: 80px;
+        padding-left: 24px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-links a {
+        margin: 8px 10px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    #container-bg {
+        text-align: left;
+        padding: 100px 32px;
+
+    }
+
+    .container-bg-data h1 {
+        font-size: 50px;
+    }
+
+    #about-bg {
+        padding-top: 150px;
+        padding-bottom: 180px;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width:1024px) {
+    #container-bg {
+        padding: 150px 60px;
+    }
+
+    .container-bg-data h1 {
+        font-size: 70px;
+    }
+
+    #about-bg {
+        background-attachment: fixed;
+
+    }
+}
